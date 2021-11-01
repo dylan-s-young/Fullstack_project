@@ -1,3 +1,5 @@
 https://medium.com/anne-kerrs-blog/using-git-and-github-for-team-collaboration-e761e7c00281
 
 https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
+
+https://info201.github.io/git-collaboration.html >> chapter 15.2
