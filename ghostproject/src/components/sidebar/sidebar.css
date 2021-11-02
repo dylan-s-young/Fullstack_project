@@ -16,13 +16,14 @@
 }
 
 .sidebartitle{
-    font-size: 30px;
+    font-size: 15px;
     color: black;
+    font-weight: 1000;
 }
 
 .sidebarlist{
     list-style: none;
-    padding: 5px;
+    padding: 0px;
 }
 
 .sidebarlistitem{
@@ -31,9 +32,15 @@
     display: flex;
     align-items: center;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 .sidebarlistitem.active,
 .sidebarlistitem:hover{
     background-color: darkcyan;
+}
+
+.sidebaricon{
+    margin-right: 5px;
+    font-size: 20px !important;
 }
