@@ -6,6 +6,9 @@ import TimelineIcon from '@mui/icons-material/Timeline';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import StorageIcon from '@mui/icons-material/Storage';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 
 export default function sidebar() {
     return (
@@ -59,6 +62,23 @@ export default function sidebar() {
                         <li className="sidebarlistitem">
                             <TimelineIcon className="sidebaricon"/>
                             Timeline
+                        </li>
+                    </ul>
+                </div>
+                <div className="sidebarmenu">
+                    <h3 className="sidebartitle">Users</h3>
+                    <ul className="sidebarlist">
+                        <li className="sidebarlistitem">
+                            <PersonOutlineIcon className="sidebaricon"/>
+                            User Info
+                        </li>
+                        <li className="sidebarlistitem">
+                            <AccountBalanceWalletIcon className="sidebaricon"/>
+                            User Balance
+                        </li>
+                        <li className="sidebarlistitem">
+                            <PeopleOutlineIcon className="sidebaricon"/>
+                            Users
                         </li>
                     </ul>
                 </div>
