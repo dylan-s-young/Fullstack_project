@@ -1,0 +1,12 @@
+.ghostbox{
+    width: 100px;
+    display: inline-flex
+}
+
+.ghostpicture{
+    position: relative;
+    top: 150px;
+    margin-bottom: 100;
+    margin-left: 800px;
+    width: 700px;
+}
