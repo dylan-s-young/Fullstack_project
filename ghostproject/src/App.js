@@ -8,18 +8,18 @@ import AdminPanel from "./pages/adminpanel/AdminPanel";
 function App() {
   return (
     <Router>
-      <Topbar/>
-      <div className="container">
-        <Sidebar/>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/admin">
-            <AdminPanel />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/admin">
+          <Topbar/>
+            <div className="container">
+              <Sidebar/>
+              <AdminPanel />
+            </div> 
+        </Route>
+      </Switch>
     </Router>
     );
 }
