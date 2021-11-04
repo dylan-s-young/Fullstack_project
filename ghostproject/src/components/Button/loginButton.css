@@ -1,0 +1,78 @@
+.btncontainer{     
+    width: 2510px;
+    height: 1240px;
+    display: flex;
+    position: relative;
+}
+.loginbtn{
+    letter-spacing: 4px;
+    position: absolute;
+    top: 50.7%;
+    margin-left: 28.4%;
+    width: 6%;
+    height: 4%;
+    font-size: 15px;
+    font-weight: bolder;
+    z-index: 100;
+    border: none;
+    color: white;
+    background-color: rgb(16, 190, 221);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.registerbtn{
+    letter-spacing: 4px;
+    position: absolute;
+    top: 50.7%;
+    margin-left: 35%;
+    width: 6%;
+    height: 4%;
+    font-size: 15px;
+    font-weight: bolder;
+    z-index: 100;
+    color: black;
+    background-color: white;
+    border-color: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media all and (max-width: 1920px) {
+    .btncontainer{     
+        width: 1870px;
+        height: 900px;
+        display: flex;
+        position: relative;
+    }
+    .loginbtn{
+        letter-spacing: 4px;
+        position: absolute;
+        top: 52.5%;
+        margin-left: 23.4%;
+        width: 7%;
+        height: 6%;
+        font-size: 15px;
+        font-weight: bolder;
+        z-index: 100;
+        border: none;
+        color: white;
+        background-color: rgb(16, 190, 221);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .registerbtn{
+        letter-spacing: 4px;
+        position: absolute;
+        top: 52.5%;
+        margin-left: 31.1%;
+        width: 7%;
+        height: 6%;
+        font-size: 15px;
+        font-weight: bolder;
+        z-index: 100;
+        color: black;
+        background-color: white;
+        border-color: lightgray;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

@@ -1,28 +1,58 @@
 .ghostbox{
-    width: 100px;
+    width: 2510px;
+    height: 1240px;
     display: flex;
     position: relative;
 }
-
 .ghostpicture{
     position: absolute;
-    top: 50vh;
-    margin-left: 40vw;
-    width: 500%;
+    top: 20%;
+    margin-left: 20vw;
+    width: 20%;
 }
-
 .ghosttext{
     position: absolute;
-    top: 20vh;
-    margin-left: 45vw;
-    width: 500%;
-    font-size: 100px;
+    top: 31.5%;
+    margin-left: 33%;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 100;
 }
-
 .moretext{
     position: absolute;
-    top: 35vh;
-    margin-left: 45vw;
-    width: 500%;
-    font-size: 25px;
+    top: 43.9%;
+    margin-left: 28.3%;
+    font-size: 20px;
+    font-weight: lighter;
+    z-index: 100;
+}
+@media all and (max-width: 1920px) {
+    .ghostbox{
+        width: 1870px;
+        height: 900px;
+        display: flex;
+        position: relative;
+    }
+    .ghostpicture{
+        position: absolute;
+        top: 20%;
+        margin-left: 15%;
+        width: 20%;
+    }
+    .ghosttext{
+        position: absolute;
+        top: 32%;
+        margin-left: 28%;
+        font-size: 40px;
+        font-weight: bolder;
+        z-index: 100;
+    }
+    .moretext{
+        position: absolute;
+        top: 45%;
+        margin-left: 23.5%;
+        font-size: 20px;
+        font-weight: lighter;
+        z-index: 100;
+    }
 }
