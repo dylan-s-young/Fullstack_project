@@ -6,11 +6,6 @@ export default function Home() {
     return (
         <div className="homepage">
             <Ghost/>
-            <div className="hometext">
-                <span>
-                    Ghost
-                </span>
-            </div>
             <Helmet>
                 <style>{'body {background-color: #9582FF; }'}</style>
             </Helmet>

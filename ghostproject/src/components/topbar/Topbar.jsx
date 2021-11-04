@@ -1,4 +1,3 @@
-import React from 'react'
 import "./topbar.css"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';

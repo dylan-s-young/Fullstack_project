@@ -1,12 +1,28 @@
 .ghostbox{
     width: 100px;
-    display: inline-flex
+    display: flex;
+    position: relative;
 }
 
 .ghostpicture{
-    position: relative;
-    top: 150px;
-    margin-bottom: 100;
-    margin-left: 800px;
-    width: 700px;
+    position: absolute;
+    top: 50vh;
+    margin-left: 40vw;
+    width: 500%;
+}
+
+.ghosttext{
+    position: absolute;
+    top: 20vh;
+    margin-left: 45vw;
+    width: 500%;
+    font-size: 100px;
+}
+
+.moretext{
+    position: absolute;
+    top: 35vh;
+    margin-left: 45vw;
+    width: 500%;
+    font-size: 25px;
 }
