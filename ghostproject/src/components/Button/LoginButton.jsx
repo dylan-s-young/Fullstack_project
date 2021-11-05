@@ -1,3 +1,4 @@
+import InteractiveLaptop from "../laptop/InteractiveLaptop";
 import "./loginButton.css";
 
 export default function LoginButton() {
@@ -9,6 +10,7 @@ export default function LoginButton() {
             <button className="registerbtn">
                 Register
             </button>
+            <InteractiveLaptop/>
         </div>
     )
 }

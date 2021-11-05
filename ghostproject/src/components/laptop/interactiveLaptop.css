@@ -1,0 +1,104 @@
+.laptop-box{
+    width: 2510px;
+    height: 1240px;
+    display: flex;
+    position: relative;
+}
+.laptop{
+    position: absolute;
+    top: 10%;
+    margin-left: 50%;
+    width: 20%;
+}
+.laptopghost{
+    position: absolute;
+    top: 20%;
+    margin-left: 70%;
+    width: 15%;
+    z-index: 10;
+}
+@media all and (max-width: 1920px) {
+    .laptop-box{
+        width: 1870px;
+        height: 900px;
+        display: flex;
+        position: relative;
+        border: none;
+    }
+    .laptop{
+        position: absolute;
+        top: 27%;
+        margin-left: 50%;
+        width: 30%;
+        z-index: 0;
+        border: 0;
+    }
+    .laptopghost{
+        position: absolute;
+        top: 31.15%;
+        margin-left: 55.2%;
+        width: 19.8%;
+        height: 25.8%;
+        z-index: 10;
+        border-color: white;
+    }
+    .ethereum{
+        animation: floatslow 5s infinite;
+        position: absolute;
+        top: 34.5%;
+        margin-left: 56%;
+        width: 5%;
+        height: 9%;
+        z-index: 20;
+    }
+    .bitcoin{
+        animation: float 7s infinite;
+        position: absolute;
+        top: 47.5%;
+        margin-left: 69.5%;
+        width: 4%;
+        height: 8%;
+        z-index: 10;
+    }
+    .cardano{
+        animation: floatslow 9s infinite;
+        position: absolute;
+        top: 34.5%;
+        margin-left: 69%;
+        width: 4.5%;
+        height: 9%;
+        z-index: 10;
+    }
+    .litecoin{
+        animation: float 11s infinite;
+        position: absolute;
+        top: 47.5%;
+        margin-left: 56.2%;
+        width: 4%;
+        height: 8%;
+        z-index: 10;
+    }
+    @keyframes float{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-20px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    @keyframes floatslow{
+        0%{
+            transform: translateY(-20px);
+        }
+        50%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(-20px);
+        }
+    }
+}
+
