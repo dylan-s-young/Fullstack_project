@@ -16,7 +16,7 @@
     z-index: 100;
     border: none;
     color: white;
-    background-color: rgb(16, 190, 221);
+    background-color: rgba(16, 190, 221, 0.883);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -35,6 +35,23 @@
     border-color: lightgray;
     border-radius: 5px;
     cursor: pointer;
+}
+.loginbtn:hover, .registerbtn:hover{
+    animation: bounce 1s linear;
+}
+@keyframes bounce{
+    20%,50%,80%,to{
+        transform: translateY(0)
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+    70%{
+        transform: translateY(-5px);
+    }
+    90%{
+        transform: translateY(-1px);
+    }
 }
 @media all and (max-width: 1920px) {
     .btncontainer{     
@@ -74,5 +91,22 @@
         border-color: lightgray;
         border-radius: 5px;
         cursor: pointer;
+    }
+    .loginbtn:hover, .registerbtn:hover{
+        animation: bounce 1s linear;
+    }
+    @keyframes bounce{
+        20%,50%,80%,to{
+            transform: translateY(0)
+        }
+        40%{
+            transform: translateY(-10px);
+        }
+        70%{
+            transform: translateY(-5px);
+        }
+        90%{
+            transform: translateY(-1px);
+        }
     }
 }
