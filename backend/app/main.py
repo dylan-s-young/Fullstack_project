@@ -1,8 +1,12 @@
 from fastapi import FastAPI
-from fastapi.params import Body
+from starlette.responses import JSONResponse
 from server.models import user
+from server.routes import user
+from server.routes  import portfolio
 
 app = FastAPI()
+
+
 
 @app.get("/")
 def home():
@@ -11,8 +15,7 @@ def home():
 
 
 
-@app.post("/users/create/")
-async def create_account(user: user.User = Body(...)):
-    print(user)
-    return user
+app.include_router(user.router, tags=['users'], prefix='/user')
+app.include_router(portfolio.router)
+
 
