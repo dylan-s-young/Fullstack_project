@@ -14,14 +14,13 @@ class User(BaseModel):
     firstname: str = Field(...)
     lastname: str = Field(...)
     email: EmailStr
-    password: str
-    age: Optional[int] = None
+    password: str = Field(min_length=6)
+    age: Optional[int] = Field(lt=100, gt=0)
 
     class Config: 
-        #Docs 
+        allow_population_by_field_name = True
         schema_extra = {
             "example": {
-                "id": "20b4444e-357f-40dc-8c34-299f44af0c34",
                 "firstname": "Peter",
                 "lastname": "Ruck",
                 "email": "peterruck@gmail.com",
@@ -32,7 +31,20 @@ class User(BaseModel):
 
 
 class UpdateUserModel(BaseModel):
-    pass
+    firstname: Optional[str]
+    lastname: Optional[str]
+    password: Optional[str] = Field(min_length=6)
+    age: Optional[int] = Field(lt=100, gt=0)
+
+    class Config:
+        schema_extra = {
+            "example": {
+                "firstname": "Peter",
+                "lastname": "Ruc",
+                "password": "petterrucko132@!",
+                "age": "16"
+            }
+        }
 
 
 
