@@ -9,6 +9,10 @@ from bson.objectid import ObjectId
 router = APIRouter()
 
 
+@router.get("/portfolio", response_description='Current holdings of user')
+async def current_holdings():
+    pass
+
 
 
 @router.post("/create", response_description='Creating an Account')
@@ -38,7 +42,20 @@ async def update_info(id: str, user: UpdateUserModel = Body(...)):
 
 @router.delete("/delete/{id}", response_description='Deleting user')
 async def delete(id:str):
-    pass
+    
+    find_user = await db["users"].find_one({"_id": id})
+
+    if find_user:
+        await db["users"].delete_one({"_id": id})
+    else:
+        raise HTTPException(status_code=404, detail=f"Not Authenticated or Id Invalid")
+
+
+    
+
+
+
+
 
 
 
